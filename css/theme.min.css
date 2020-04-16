@@ -3035,7 +3035,7 @@ img {
       grid-row: 2; }
       @media screen and (min-width: 768px) {
         .acne .containerish .col-left {
-          padding: 40px; } }
+          padding: 40px 40px 80px 40px; } }
       @media screen and (min-width: 992px) {
         .acne .containerish .col-left {
           grid-row: 1; } }
@@ -3101,6 +3101,172 @@ img {
         padding-left: 4rem; } }
     .skincancer .containerish .sec-info a {
       margin-top: 4rem; }
+
+@media screen and (min-width: 992px) {
+  .cosmetics {
+    margin-top: 2rem; } }
+
+.cosmetics .containerish {
+  padding: 40px 40px 80px 40px;
+  display: grid;
+  grid-gap: 2rem; }
+  @media screen and (min-width: 768px) {
+    .cosmetics .containerish {
+      padding: 80px 40px 80px 40px; } }
+  @media screen and (min-width: 992px) {
+    .cosmetics .containerish {
+      grid-template-columns: 1fr max-content;
+      align-items: center; } }
+  @media screen and (min-width: 1400px) {
+    .cosmetics .containerish {
+      padding-left: 8rem; } }
+  .cosmetics .containerish .sec-img {
+    grid-row: 1; }
+    @media screen and (min-width: 768px) {
+      .cosmetics .containerish .sec-img {
+        max-width: 400px;
+        justify-self: center; } }
+    @media screen and (min-width: 992px) {
+      .cosmetics .containerish .sec-img {
+        grid-column: 2; } }
+    @media screen and (min-width: 1200px) {
+      .cosmetics .containerish .sec-img {
+        justify-self: flex-start; } }
+    @media screen and (min-width: 1400px) {
+      .cosmetics .containerish .sec-img {
+        margin-right: 4rem; } }
+  .cosmetics .containerish .sec-info p {
+    max-width: 500px; }
+  @media screen and (min-width: 1400px) {
+    .cosmetics .containerish .sec-info {
+      padding-left: 4rem; } }
+  .cosmetics .containerish .sec-info a {
+    margin-top: 4rem; }
+
+.laurad {
+  background: url("../../images/laurad-bg@2x.jpg") center center/cover; }
+  @media screen and (min-width: 1200px) {
+    .laurad {
+      margin-top: 4rem; } }
+  @media screen and (min-width: 1400px) {
+    .laurad {
+      margin-top: 7rem; } }
+  .laurad .containerish {
+    padding: 40px;
+    display: grid;
+    grid-gap: 2rem;
+    overflow: visible; }
+    .laurad .containerish .sec-info p {
+      max-width: 493px; }
+    .laurad .containerish .sec-info .btn-wrapper {
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column; }
+      @media screen and (min-width: 768px) {
+        .laurad .containerish .sec-info .btn-wrapper {
+          flex-direction: row;
+          width: 80%;
+          justify-content: flex-start;
+          align-items: center; }
+          .laurad .containerish .sec-info .btn-wrapper a {
+            margin-right: 6rem; } }
+      @media screen and (min-width: 992px) {
+        .laurad .containerish .sec-info .btn-wrapper {
+          flex-direction: row;
+          width: 70%;
+          justify-content: space-between;
+          align-items: center; }
+          .laurad .containerish .sec-info .btn-wrapper a {
+            margin-right: 0; } }
+      @media screen and (min-width: 1200px) {
+        .laurad .containerish .sec-info .btn-wrapper {
+          width: 65%; } }
+      @media screen and (min-width: 1400px) {
+        .laurad .containerish .sec-info .btn-wrapper {
+          width: 60%;
+          max-width: calc(198px * 2); } }
+      .laurad .containerish .sec-info .btn-wrapper a {
+        margin-bottom: 2rem; }
+    .laurad .containerish .col-right {
+      display: flex;
+      justify-content: center;
+      grid-row: 1; }
+      @media screen and (min-width: 992px) {
+        .laurad .containerish .col-right {
+          grid-column: 2; } }
+      @media screen and (min-width: 768px) {
+        .laurad .containerish .col-right .sec-img {
+          width: 400px; } }
+      @media screen and (min-width: 992px) {
+        .laurad .containerish .col-right .sec-img {
+          max-width: initial; } }
+      @media screen and (min-width: 1200px) {
+        .laurad .containerish .col-right .sec-img {
+          width: 506px;
+          position: relative;
+          top: -80px; } }
+      @media screen and (min-width: 1400px) {
+        .laurad .containerish .col-right .sec-img {
+          width: 606px;
+          position: relative;
+          top: -100px; } }
+.coolsculpting {
+  position: relative;
+  overflow: hidden; }
+  .coolsculpting .sec-flower {
+    position: absolute;
+    bottom: -100px;
+    right: -100px; }
+    @media screen and (min-width: 768px) {
+      .coolsculpting .sec-flower {
+        height: 300px;
+        width: auto; } }
+    @media screen and (min-width: 1200px) {
+      .coolsculpting .sec-flower {
+        height: 400px;
+        width: auto;
+        bottom: -200px;
+        right: -80px; } }
+    @media screen and (min-width: 1400px) {
+      .coolsculpting .sec-flower {
+        height: 500px;
+        width: auto;
+        bottom: -250px;
+        right: -100px; } }
+  .coolsculpting .containerish {
+    padding: 40px;
+    display: grid;
+    grid-gap: 2rem; }
+    @media screen and (min-width: 992px) {
+      .coolsculpting .containerish {
+        grid-template-columns: 1.5fr 1fr; } }
+    @media screen and (min-width: 1200px) {
+      .coolsculpting .containerish {
+        grid-template-columns: 1fr 1fr;
+        padding: 80px 40px;
+        align-items: center; } }
+    @media screen and (min-width: 1200px) {
+      .coolsculpting .containerish .sec-info {
+        padding-left: 3rem; } }
+    .coolsculpting .containerish .sec-info .coolsculpting-info h2 {
+      position: relative;
+      text-decoration: underline; }
+      .coolsculpting .containerish .sec-info .coolsculpting-info h2::after {
+        content: url("../images/arrow-down.png");
+        position: absolute;
+        transform: translateY(-10%);
+        margin-left: 1rem; }
+    .coolsculpting .containerish .sec-info .coolsculpting-info a {
+      margin-top: 2rem; }
+    .coolsculpting .containerish .sec-info .cooltone-info {
+      margin-top: 5rem; }
+      .coolsculpting .containerish .sec-info .cooltone-info h2 {
+        position: relative; }
+        .coolsculpting .containerish .sec-info .cooltone-info h2::after {
+          content: url("../images/arrow-right.png");
+          position: absolute;
+          transform: translateY(6%);
+          margin-left: 1rem; }
 
 .appointment .containerish-fluid {
   padding: 40px;

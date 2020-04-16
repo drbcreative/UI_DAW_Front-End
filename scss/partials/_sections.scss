@@ -197,7 +197,7 @@
       grid-row: 2;
       // background: yellow;
       @include isMedium {
-        padding: 40px;
+        padding: 40px 40px 80px 40px;
       }
       @include isLarge {
         grid-row: 1;
@@ -290,6 +290,230 @@
     }
   }
 }
+
+// cosmetics
+.cosmetics {
+  @include isLarge {
+    margin-top: 2rem;
+  }
+  .containerish {
+    padding: 40px 40px 80px 40px;
+    display: grid;
+    grid-gap: 2rem;
+
+    @include isMedium {
+      padding: 80px 40px 80px 40px;
+    }
+    @include isLarge {
+      grid-template-columns: 1fr max-content;
+      align-items: center;
+    }
+    @include isRetina {
+      padding-left: 8rem;
+    }
+
+    .sec-img {
+      grid-row: 1;
+      @include isMedium {
+        max-width: 400px;
+        justify-self: center;
+      }
+      @include isLarge {
+        grid-column: 2;
+      }
+
+      @include isXLarge {
+        justify-self: flex-start;
+      }
+      @include isRetina {
+        margin-right: 4rem;
+      }
+    }
+    .sec-info {
+      p {
+        max-width: 500px;
+      }
+      @include isRetina {
+        padding-left: 4rem;
+      }
+      a {
+        margin-top: 4rem;
+      }
+    }
+  }
+}
+
+// laurad
+.laurad {
+  background: url('../../images/laurad-bg@2x.jpg') center center / cover;
+  @include isXLarge {
+    margin-top: 4rem;
+  }
+  @include isRetina {
+    margin-top: 7rem;
+  }
+
+  .containerish {
+    padding: 40px;
+    display: grid;
+    grid-gap: 2rem;
+    overflow: visible;
+
+    .sec-info {
+      p {
+        max-width: 493px;
+      }
+
+      .btn-wrapper {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        @include isMedium {
+          flex-direction: row;
+          width: 80%;
+          justify-content: flex-start;
+          align-items: center;
+          a {
+            margin-right: 6rem;
+          }
+        }
+        @include isLarge {
+          flex-direction: row;
+          width: 70%;
+          justify-content: space-between;
+          align-items: center;
+          a {
+            margin-right: 0;
+          }
+        }
+        @include isXLarge {
+          width: 65%;
+        }
+        @include isRetina {
+          width: 60%;
+          max-width: calc(198px * 2);
+        }
+
+        a {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+    .col-right {
+      display: flex;
+      justify-content: center;
+      grid-row: 1;
+      @include isLarge {
+        grid-column: 2;
+      }
+      .sec-img {
+        @include isMedium {
+          width: 400px;
+        }
+        @include isLarge {
+          max-width: initial;
+        }
+        @include isXLarge {
+          width: 506px;
+          position: relative;
+          top: -80px;
+        }
+        @include isRetina{
+          width: 606px;
+          position: relative;
+          top: -100px;
+        }
+      }
+    }
+  }
+}
+
+// coolsculpting
+.coolsculpting {
+  position: relative;
+  overflow: hidden;
+  .sec-flower {
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    @include isMedium {
+      height: 300px;
+      width: auto;
+    }
+    @include isXLarge {
+      height: 400px;
+      width: auto;
+      bottom: -200px;
+      right: -80px;
+    }
+    @include isRetina {
+      height: 500px;
+      width: auto;
+      bottom: -250px;
+      right: -100px;
+    }
+  }
+
+    .containerish {
+      padding: 40px;
+      display: grid;
+      grid-gap: 2rem;
+      @include isLarge {
+        grid-template-columns: 1.5fr 1fr;
+      }
+      @include isXLarge {
+        grid-template-columns: 1fr 1fr;
+        padding: 80px 40px;
+        align-items: center;
+      }
+      .sec-info {
+        @include isXLarge {
+          padding-left: 3rem;
+        }
+        .coolsculpting-info {
+          h2 {
+            position: relative;
+            text-decoration: underline;
+
+            &::after {
+              content: url("../images/arrow-down.png");
+              position: absolute;
+              // top: 50%;
+              transform: translateY(-10%);
+              margin-left: 1rem;
+            }
+          }
+          a {
+            margin-top: 2rem;
+          }
+        }
+        .cooltone-info {
+          margin-top: 5rem;
+          h2 {
+            position: relative;
+
+            &::after {
+              content: url("../images/arrow-right.png");
+              position: absolute;
+              // top: 50%;
+              transform: translateY(6%);
+              margin-left: 1rem;
+            }
+          }
+        }
+
+      }
+
+
+    }
+
+}
+
+
+
+
+
+
 // appomintments
 
 .appointment {

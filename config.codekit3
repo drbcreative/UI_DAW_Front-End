@@ -84,6 +84,50 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/images/arrow-down.png": {
+		"ft": 32768,
+		"iS": 245,
+		"oA": 0,
+		"oAP": "/images/arrow-down.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/images/arrow-down@2x.png": {
+		"ft": 32768,
+		"iS": 395,
+		"oA": 0,
+		"oAP": "/images/arrow-down@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/images/arrow-right.png": {
+		"ft": 32768,
+		"iS": 174,
+		"oA": 0,
+		"oAP": "/images/arrow-right.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/images/arrow-right@2x.png": {
+		"ft": 32768,
+		"iS": 818,
+		"oA": 0,
+		"oAP": "/images/arrow-right@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/images/coolsculpting-flowers@2x.png": {
 		"ft": 32768,
 		"iS": 334864,
@@ -204,6 +248,17 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/images/laurad-bg@2x copy.jpg": {
+		"ft": 16384,
+		"iS": 101911,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/laurad-bg@2x copy.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/images/laurad-bg@2x.jpg": {
 		"ft": 16384,
 		"iS": 98378,
@@ -212,7 +267,7 @@
 		"oAP": "/images/laurad-bg@2x.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/images/laurad-img@2x.jpg": {
