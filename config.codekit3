@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "32001",
 "files": {
+	"/.gitattributes": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/.gitattributes",
+		"oF": 0
+		},
 	"/.gitignore": {
 		"cB": 0,
 		"ft": 8192,
@@ -23,6 +31,24 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/assets/Amy Wechsler MD-website-2020-DEV.xd",
+		"oF": 0
+		},
+	"/css/theme.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/css/theme.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/css/theme.min.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/css/theme.min.css.map",
 		"oF": 0
 		},
 	"/images/acne-img@2x.jpg": {

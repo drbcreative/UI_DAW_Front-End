@@ -14,14 +14,14 @@ header#header-container {
   section.top-bar {
     display: none;
 
-    @include isXLarge {
+    @include isXLarge{
       display: block;
     }
     .containerish-fluid {
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      padding: 50px 30px;
+      padding: 20px 30px;
       position: absolute;
       top: 0;
       width: 100%;
@@ -30,8 +30,10 @@ header#header-container {
         color: $color-white;
         text-decoration: none;
         margin-left: 2rem;
-        font-size: 14px;
-        font-family: $font-secondary;
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: .04rem;
+        font-family: $font-primary;
 
         &:hover {
           color: $color-accent;
@@ -55,7 +57,7 @@ header#header-container {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-    padding: 30px 0 0 30px;
+    padding: 20px 0 20px 20px;
     background: $color-main;
     @include isLarge {
       padding: 20px 0 20px 30px;
@@ -66,12 +68,12 @@ header#header-container {
     }
 
     .logonav {
-      max-width: 50px;
+      max-width: 150px;
       @include isLarge {
-        max-width: 100px;
+        max-width: 200px;
       }
       @include isXLarge {
-        max-width: 161px;
+        max-width: 256.34px;
       }
     }
 
@@ -148,13 +150,13 @@ nav.navdiv {
         display: block;
         font-size: 1rem;
         color: #fff;
-        text-transform: uppercase;
+        // text-transform: uppercase;
         text-decoration: none;
         font-weight: 300;
         letter-spacing: 0.5px;
-        padding: 0 30px;
+        padding: 0 20px;
         @include isXLarge {
-          padding: 0 15px;
+          padding: 0 10px;
         }
 
         &:hover {
@@ -204,7 +206,8 @@ nav.navdiv {
             text-decoration: none;
 
             &:hover {
-              background: #1e1225;
+              color: $color-main;
+              background: $color-accent;
             }
           }
           // Second Dropdown
@@ -264,7 +267,7 @@ nav.navdiv {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1198px) {
   nav.navdiv .closebutton {
     display: block;
   }
@@ -300,7 +303,7 @@ nav.navdiv {
     width: 30px;
     height: 2px;
     margin: 8px 0;
-    background: #d88d41;
+    background: $color-white;
   }
 
   nav.navdiv ul.items {

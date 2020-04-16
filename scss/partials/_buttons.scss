@@ -5,97 +5,204 @@
   transition: all 0.3s ease-in-out;
 }
 
-.ui-btn-group {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: 1rem 0;
-  @include isMedium {
-    flex-direction: row;
-  }
-
-  .ui-btn-right {
-    @include isMedium {
-      margin-right: 1rem;
-    }
-  }
-}
+// .ui-btn-group {
+//   width: 100%;
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: column;
+//   margin: 1rem 0;
+//   @include isMedium {
+//     flex-direction: row;
+//   }
+//
+//   .ui-btn-right {
+//     @include isMedium {
+//       margin-right: 1rem;
+//     }
+//   }
+// }
 /* General Button Style */
-@mixin ui-btn {
-  font-family: $font-secondary;
-  font-size: 1rem;
-  font-weight: 600;
-  font-style: normal;
-  letter-spacing: 0.1rem;
-  line-height: 1rem;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  // width: auto;
-  padding: 1.3rem 1.5rem 1rem 1.5rem;
-  border-radius: 50px;
-  text-decoration: none;
-  margin-bottom: .5rem;
-  @include btn-fade;
-  @include isMedium {
-    // min-width: 220px;
-    // max-width: 329px;
-    margin-bottom: 0;
-    width: auto;
-    padding: 1.3rem 1.5rem 1rem 1.5rem;
-  }
-}
+// @mixin ui-btn {
+//   font-family: $font-secondary;
+//   font-size: 1rem;
+//   font-weight: 600;
+//   font-style: normal;
+//   letter-spacing: 0.1rem;
+//   line-height: 1rem;
+//   display: inline-flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 100%;
+//   // width: auto;
+//   padding: 1.3rem 1.5rem 1rem 1.5rem;
+//   border-radius: 50px;
+//   text-decoration: none;
+//   margin-bottom: .5rem;
+//   @include btn-fade;
+//   @include isMedium {
+//     // min-width: 220px;
+//     // max-width: 329px;
+//     margin-bottom: 0;
+//     width: auto;
+//     padding: 1.3rem 1.5rem 1rem 1.5rem;
+//   }
+// }
+
 /* Main Button Color ******************************************************** */
-.ui-btn-main {
-  @include ui-btn;
-  background-color: $color-main;
+
+// Special Round Buttons
+.ui-btn-small-white {
+  font-family: $font-secondary;
+  font-size: 20px;
   color: $color-white;
+  width: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: max-content;
+  display: inline-flex;
+
+  &::after {
+    content: '>';
+    position: absolute;
+    right: -70px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    height: 50px;
+    width: 50px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+    // padding: 0.5rem 0 0.4rem 0.3rem;
+  }
 
   &:hover {
-    text-decoration: none;
-    background-color: $color-accent;
-    color: $color-white;
+    color: $color-accent;
+  }
+  &:hover::after {
+    background-color: darken($color-main, 20);
   }
 }
-
-.ui-btn-main-ol {
-  @include ui-btn;
-  background: transparent;
-  border: 2px solid $color-main;
+.ui-btn-small-main {
+  font-family: $font-secondary;
+  font-size: 20px;
   color: $color-main;
+  width: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: max-content;
+  display: inline-flex;
+
+  &::after {
+    content: '>';
+    position: absolute;
+    right: -70px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $color-main;
+    height: 50px;
+    width: 50px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+    // padding: 0.5rem 0 0.4rem 0.3rem;
+  }
 
   &:hover {
-    text-decoration: none;
-    background: $color-accent;
-    border: 2px solid $color-accent;
-    color: $color-white;
+    color: lighten($color-main, 10);
+  }
+  &:hover::after {
+    background-color: darken($color-main, 20);
   }
 }
-
-.ui-btn-white {
-  @include ui-btn;
-  background-color: $color-white;
+.ui-btn-big-main {
+  font-family: $font-secondary;
+  font-size: 20px;
   color: $color-main;
+  width: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: max-content;
+  display: inline-flex;
+
+  &::after {
+    content: '>';
+    position: absolute;
+    right: -130px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $color-main;
+    height: 102px;
+    width: 102px;
+    font-size: 2.5rem;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+    // padding: 0.5rem 0 0.4rem 0.3rem;
+  }
 
   &:hover {
-    text-decoration: none;
-    background-color: $color-accent;
-    color: $color-white;
+    color: lighten($color-main, 10);
+  }
+  &:hover::after {
+    background-color: darken($color-main, 20);
   }
 }
 
-.ui-btn-white-ol {
-  @include ui-btn;
-  background: transparent;
-  border: 2px solid #fff;
-  color: #fff;
-
-  &:hover {
-    text-decoration: none;
-    background: $color-accent;
-    border: 2px solid $color-accent;
-    color: $color-white;
-  }
-}
+// Normal Project Buttons
+// .ui-btn-main {
+//   @include ui-btn-small;
+//   background-color: $color-main;
+//   color: $color-white;
+//
+//   &:hover {
+//     text-decoration: none;
+//     background-color: $color-accent;
+//     color: $color-white;
+//   }
+// }
+// .ui-btn-main-ol {
+//   @include ui-btn;
+//   background: transparent;
+//   border: 2px solid $color-main;
+//   color: $color-main;
+//
+//   &:hover {
+//     text-decoration: none;
+//     background: $color-accent;
+//     border: 2px solid $color-accent;
+//     color: $color-white;
+//   }
+// }
+// .ui-btn-white {
+//   @include ui-btn;
+//   background-color: $color-white;
+//   color: $color-main;
+//
+//   &:hover {
+//     text-decoration: none;
+//     background-color: $color-accent;
+//     color: $color-white;
+//   }
+// }
+// .ui-btn-white-ol {
+//   @include ui-btn;
+//   background: transparent;
+//   border: 2px solid #fff;
+//   color: #fff;
+//
+//   &:hover {
+//     text-decoration: none;
+//     background: $color-accent;
+//     border: 2px solid $color-accent;
+//     color: $color-white;
+//   }
+// }
