@@ -20,8 +20,8 @@ $(document).ready(function() {
     slidesToScroll: 1,
     arrows: true,
     infinite:true,
-    dots: false,
-    // appendDots:".sculpdots",
+    dots: true,
+    appendDots:".sec-dots",
     nextArrow:
       '<span class="arrow next"><svg xmlns="http://www.w3.org/2000/svg" width="65.101" height="46.39" viewBox="0 0 65.101 46.39"><g id="Group_152" data-name="Group 152" transform="translate(1344.794 8804.39) rotate(180)"><g id="Path_65" data-name="Path 65" transform="translate(1298.404 8781.195) rotate(-45)" fill="none"><path d="M0,0H32.8V32.8H0Z" stroke="none"/><path d="M 0.9999980926513672 0.9999980926513672 L 0.9999980926513672 31.80273628234863 L 31.80273628234863 31.80273628234863 L 31.80273628234863 0.9999980926513672 L 23.18942642211914 0.9999980926513672 L 0.9999980926513672 0.9999980926513672 M -3.814697265625e-06 -3.814697265625e-06 L 23.18942642211914 -3.814697265625e-06 L 32.80273818969727 -3.814697265625e-06 L 32.80273818969727 32.80273818969727 L -3.814697265625e-06 32.80273818969727 L -3.814697265625e-06 -3.814697265625e-06 Z" stroke="none" fill="#fff"/></g><g id="Group_117" data-name="Group 117" transform="translate(688.062 9463.508) rotate(-90)"><g id="Group_8" data-name="Group 8" transform="translate(-37 108)"><path id="Path_42" data-name="Path 42" d="M353.354,454.825l-6.114-6.764v13.508Z" transform="translate(1174.568 178.523) rotate(90)" fill="#fff" stroke="#fff" stroke-width="1"/><path id="Path_43" data-name="Path 43" d="M722.728,508.246H686.639" transform="translate(1227.746 -203.008) rotate(90)" fill="none" stroke="#fff" stroke-width="1"/></g></g></g></svg></span>',
     prevArrow:

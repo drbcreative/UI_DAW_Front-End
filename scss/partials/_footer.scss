@@ -3,7 +3,27 @@
 /* ************************************************************************** */
 /* footer 1 ***************************************************************** */
 .footer-1 {
-  background: #F8F7F7;
+  background: $color-main;
+  position: relative;
+  overflow: hidden;
+
+  .footer-flower {
+    position: absolute;
+    bottom: 0;
+    right: -50%;
+    height: 300px;
+    width: auto;
+    @include isLarge {
+      bottom: -30%;
+      right: -20%;
+      height: 300px;
+    }
+    @include isXLarge {
+      bottom: -20%;
+      right: -20%;
+      height: 300px;
+    }
+  }
 
   .sec-link-dark {
     font-size: 1rem;
@@ -23,7 +43,7 @@
 
     @include isXLarge {
       grid-template-columns: repeat(4, 1fr);
-      padding: 40px 30px;
+      padding: 40px 40px;
     }
 
 
@@ -37,18 +57,29 @@
       display: flex;
       justify-content: flex-start;
       .footer-logo {
-        max-width: 201px;
+        align-self: center;
+        max-width: 330px;
         @include isMedium {
-          max-width: 45px;
-          max-height: 50px;
+          width: calc(330px / 2);
+          height: calc(69px / 2);
         }
         @include isLarge {
           max-width: 210px;
           max-height: 216px;
         }
+        @include isXLarge {
+          width: calc(330px / 1);
+          height: calc(69px / 1);
+        }
       }
     }
     .col-two {
+      p {
+        line-height: calc(15px * 1.5);
+      }
+
+    }
+    .col-three {
       .social-links {
         margin-top: 1rem;
 
@@ -57,23 +88,18 @@
           position: relative;
           width: 30px !important;
           height: 30px;
-          border: 1px solid $color-main;
+          border: 1px solid $color-white;
           border-radius: 50px;
 
           svg {
             max-height: 20px;
-            color: $color-main;
+            color: $color-white;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
           }
         }
-      }
-    }
-    .col-three {
-      p {
-        line-height: calc(15px * 1.5);
       }
     }
   }

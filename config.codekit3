@@ -200,8 +200,8 @@
 		"oA": 0,
 		"oAP": "/images/footer-flowers@2x.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -435,6 +435,28 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/images/mindbeauty-bg.jpg": {
+		"ft": 16384,
+		"iS": 38175,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/mindbeauty-bg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/mindbeauty-bg@2x.jpg": {
+		"ft": 16384,
+		"iS": 126788,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/mindbeauty-bg@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/images/press-img-1@2x.jpg": {
 		"ft": 16384,
 		"iS": 49389,
@@ -522,8 +544,8 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/src/global-script-min.js",
-		"oF": 0,
+		"oAP": "/js/build/global-script-min.js",
+		"oF": 2,
 		"sC": 3,
 		"tS": 0
 		},
@@ -532,7 +554,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/js/src/vendor/jquery-3.4.1.min-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -1954,6 +1976,14 @@
 "hooks": [
 	],
 "manualImportLinks": {
+	"/js/src/global-script.js": [
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "/js/src/vendor/jquery-3.4.1.min.js",
+			"position": 0,
+			"type": 0
+			}
+		]
 	},
 "projectAttributes": {
 	"creationDate": 608748448.28124499,

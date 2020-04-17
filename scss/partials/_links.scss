@@ -47,8 +47,10 @@
 }
 
 .sec-link-white {
-  @extend .body-copy;
-  font-weight: 700;
+  // @extend .body-copy;
+  font-family: $font-secondary;
+  font-size: 1rem;
+  font-weight: 400;
   color: $color-white;
   text-decoration: none;
 
@@ -91,12 +93,12 @@
   font-size: 15px; // 16px
   line-height: calc(15px * 1.5);
   font-family: $font-primary;
-  color: $color-copy;
+  color: $color-white;
   text-decoration: none;
   @include linkFade;
 
   &:hover {
-    color: $color-main;
+    color: $color-accent;
     text-decoration: none;
     @include linkFade;
   }
